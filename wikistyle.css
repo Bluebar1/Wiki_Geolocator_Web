@@ -1,0 +1,150 @@
+html {
+  display: flex;
+
+  color: #c0c0c0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.list-wrap a {
+  color: white;
+  padding-left: 10px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+.summarywrap {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.userinputbox {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.userinputbox h1 {
+  text-align: center;
+}
+
+/* latitude */
+#xinput {
+  min-width: 250px;
+  background-color: #c0c0c0;
+}
+
+/* longitude */
+#yinput {
+  min-width: 250px;
+  background-color: #c0c0c0;
+}
+.xinputcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.yinputcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.xcoordcontainer {
+  color: black;
+}
+.wikiwrap {
+  padding-top: 30px;
+  background-color: rgba(0, 0, 0, 50%);
+
+  width: 80%;
+  height: 100%;
+
+  z-index: -10;
+  margin: auto;
+}
+.specwrap {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  min-height: 400px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* background image */
+.wikibg {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/nasa.jpg");
+  background-size: cover;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 6);
+  position: relative;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.inputbox {
+  text-align: center;
+}
+
+.heading h1,
+.heading h3 {
+  padding-top: 30px;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+
+.list-wrap {
+  display: block;
+}
+
+.footer-info a {
+  color: azure;
+}
+
+.footer-info h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-info {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .wikiwrap {
+    width: 100%;
+  }
+
+  .heading h3 {
+    width: 80%;
+  }
+
+  .specwrap {
+    display: block;
+    width: 70%;
+    min-width: 350px;
+  }
+
+  .list-wrap h3 {
+    text-align: center;
+  }
+}

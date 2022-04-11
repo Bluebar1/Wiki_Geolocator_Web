@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WebTech Final</title>
+
+    <link rel="stylesheet" href="./wikistyle.css" />
+  </head>
+
+  <body>
+    <div class="wikibg">
+      <!-- intro information -->
+      <div class="heading">
+        <h1>Wikipedia GeoSearch Locator</h1>
+        <h3>
+          How it works: Enter a latitude and longitude to retrieve a list of
+          Wikipedia pages near that location. To view further info on a page you
+          can click "more info" or go directly to the wikipedia page with the
+          link.
+        </h3>
+      </div>
+      <div class="wikiwrap">
+        <!-- imput boxes -->
+        <div class="userinputbox">
+          <h1>Enter a Latitude Value</h1>
+          <div class="xinputcontainer">
+            <input class="inputbox" id="xinput" type="text" value="42.66069" />
+          </div>
+          <h1>Enter a Longitude Value</h1>
+          <div class="yinputcontainer">
+            <input
+              class="inputbox"
+              id="yinput"
+              type="text"
+              value="-73.787577"
+            />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button onclick="fn1()" id="btn1" class="submitbutton">
+            Click for GeoSearch
+          </button>
+        </div>
+
+        <div class="specwrap">
+          <div class="list-wrap">
+            <h3>Wikipedia page title</h3>
+            <ul id="dynamic-list"></ul>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <h3>
+            Background image is Free Use provided by
+            <a href="https://nasa.gov" target="_blank">NASA.</a>
+          </h3>
+          <a href="mailto:nblaauboer@albany.edu"><h3>Email Me</h3></a>
+          <a href="./work.html"><h3>View my Past Work</h3></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./wikiapi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>WebTech Final</title>
+
+    <link rel="stylesheet" href="./wikistyle.css" />
+  </head>
+
+  <body onload="getSummary()">
+    <!-- onload="getSummary()"> -->
+    <div class="wikibg">
+      <!-- intro information -->
+      <div class="heading">
+        <h1>Wikipedia Summary</h1>
+        <h3>Summary of Page Selected:</h3>
+      </div>
+      <div class="summarywrap">
+        <span id="summaryspan"></span>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./wikiapi.js"></script>
+  </body>
+</html>
